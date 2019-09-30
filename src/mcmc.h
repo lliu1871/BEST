@@ -1,0 +1,14 @@
+Tree *AllocateTree (int numTaxa, int isTreeRooted);
+int	  DerootTree (Tree *t, int outgroup);
+int   DoMcmc (void);
+int   DoMcmcp (void);
+int   DoMcmcParm (char *parmName, char *tkn);
+int   DoReassemble (void);
+int   DoReassembleParm (char *parmName, char *tkn);
+void  FreeTree (Tree *t);
+void  GetDownPass (Tree *t);
+int	  MoveCalculationRoot (Tree *t, int outgroup);
+FILE *OpenNewMBPrintFile (char *fileName);
+int	  RootTree (Tree *t);
+void  SetBit (int i, long *bits);
+void  SetUpMoveTypes (void);
